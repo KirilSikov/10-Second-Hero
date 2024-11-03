@@ -1,0 +1,16 @@
+GCC = cc68x
+
+OBJ = tst_exc.o event.o model.o
+
+tst_exc: $(OBJ)
+	$(GCC) -g tst_exc.o event.o model.o -o test
+
+tst_exc.o: tst_exc.c event.h model.h
+	$(GCC) -g -c tst_exc.c
+
+event.o: event.c event.h
+	$(GCC) -g -c event.c
+	
+model.o: model.c model.h
+	$(GCC) -g -c model.c
+

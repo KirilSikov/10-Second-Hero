@@ -1,0 +1,31 @@
+GGC = cc68x -g -c
+GCC = cc68x -g
+
+OBJ = hero.o renderer.o model.o event.o const.o raster.o psg.o music.o
+
+tst_exc: $(OBJ)
+	$(GCC) $(OBJ) -o comp
+
+hero.o: hero.c const.h
+	$(GGC) hero.c
+
+renderer.o: renderer.c renderer.h raster.h const.h
+	$(GGC) renderer.c
+
+event.o: event.c event.h
+	$(GGC) event.c
+	
+model.o: model.c model.h const.h
+	$(GGC) model.c
+
+const.o: const.c const.h
+	$(GGC) const.c
+
+raster.o: raster.c raster.h
+	$(GGC) raster.c
+	
+psg.o: psg.c psg.h
+	$(GGC) psg.c
+	
+music.o: music.c music.h
+	$(GGC) music.c
