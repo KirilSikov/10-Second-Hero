@@ -1,0 +1,21 @@
+IMPORTANT NOTE: The game by itself exceeds the 
+memory limit of the default settings within 
+Steem. Make sure that the memory size within
+Steem is greater than 1MB (choose 4MB in options > machine).
+You will need to cold reset the Steem emulator
+in order for memory changes to take effect. This
+option can be found at the bottom of the machine
+settings.
+
+GAME GUIDE:
+
+When at splash screen:
+- press 1 to start single player game
+- press ESC to quit the game
+
+
+When in game:
+- use A and D to move left/right
+- use SPACE to jump
+- first jump THEN move left/right to move mid air.
+- catch the crystal before 10 seconds run out.

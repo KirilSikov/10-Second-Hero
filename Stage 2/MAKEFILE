@@ -1,0 +1,11 @@
+test: tstrast.o raster.o const.o
+	cc68x -g tstrast.o raster.o const.o
+
+tstrast.o: tstrast.c raster.h const.h
+	cc68x -g -c tstrast.c
+
+raster.o: raster.c raster.h const.h
+	cc68x -g -c raster.c
+
+const.o: const.c const.h
+	cc68x -g -c const.c

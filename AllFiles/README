@@ -1,0 +1,3 @@
+ok so this is the folder where we will include all files from every stage, for the makefiles and the test.c files, put them in the stage folders.
+
+This way we won't have to worry about which file is outdated and what is updated.
